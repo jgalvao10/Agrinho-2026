@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte - Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <h1 class="logo">Agro<span>Forte</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#proposito">Nosso Propósito</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#acoes">Ações</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <h2>Raízes do Amanhã: A colheita conciente</h2>
+                <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+                <a href="#pilares" class="btn">Conheça Nossos Pilares</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="proposito" class="section section-light">
+        <div class="container text-center">
+            <h2>Produzir sem Destruir</h2>
+            <p class="subtitle">O agonegócio é um dos principais pilares da economia brasileira, garantindo a segurança alimentar e grande milhões de empregos. Contudo, o grande desafio da atualidade não reside apenas expandir a peodução, mas em consolidar um modelo de desenvolvimento que caminhe em perfeito consonância com a preservação ambiental.  </p>
+            
+            <img src="img03.jpg" alt="Plantação sustentável com tecnologia de ponta" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 20px;">
+        </div>
+    </section>
+
+    <section id="pilares" class="section">
+        <div class="container">
+            <h2 class="text-center section-title">A busca pelo Equilíbrio</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Produção Eficiente</h3>
+                    <p>Uso de tecnologias de precisão para otimizar safras, reduzir o desperdício de insumos e aumentar a eficiência por hectare.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💧</div>
+                    <h3>Gestão de Recursos</h3>
+                    <p>Manejo e planejamento do controle dos recursos hídricos, é necessário para o não desperdício da água, aproveitando cada gota, assim aplicando a sustentabilidade hídrica.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔄</div>
+                    <h3>Carbono Neutro</h3>
+                    <p>Incentivo ao plantio direto, rotação de culturas e integração lavoura-pecuária-floresta (ILPF) para sequestro de carbono.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="acoes" class="section section-dark">
+        <div class="container text-center">
+            <h2>Calcule o Impacto Positivo</h2>
+            <p>Selecione uma prática sustentável abaixo para ver como ela ajuda o meio ambiente:</p>
+            
+            <div class="btn-group">
+                <button class="btn-tab active" onclick="mostrarImpacto('tecnologia')">Agricultura de Precisão</button>
+                <button class="btn-tab" onclick="mostrarImpacto('agua')">Manejo de Água</button>
+                <button class="btn-tab" onclick="mostrarImpacto('solo')">Rotação de Culturas</button>
+            </div>
+
+            <div id="impacto-resultado" class="impacto-box">
+                <p><strong>Impacto:</strong> Redução de até 30% no uso de defensivos químicos e fertilizantes através do mapeamento via satélite.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section section-light">
+        <div class="container">
+            <h2 class="text-center">Junte-se ao Movimento</h2>
+            <p class="text-center subtitle">Quer saber como implementar essas soluções na sua propriedade ou fazer parcerias? Fale conosco.</p>
+            
+            <form id="contactForm" class="form-sustentavel">
+                <input type="text" id="nome" placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Seu E-mail" required>
+                <textarea id="mensagem" placeholder="Como podemos ajudar a construir esse futuro?" rows="4" required></textarea>
+                <button type="submit" class="btn btn-block">Enviar Mensagem</button>
+            </form>
+            <div id="formMsg" class="form-message"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Agro Forte Sustentável. Produção e Meio Ambiente em Harmonia.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

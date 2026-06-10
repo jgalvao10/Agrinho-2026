@@ -1,0 +1,267 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #2d3732;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.text-center { text-align: center; }
+
+/* Cabeçalho */
+header {
+    background-color: #1b382b;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #52b788;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #e2efe0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #52b788;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1625246333195-78d9c38ad496?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    height: 75vh;
+}
+
+.hero-overlay {
+    background: rgba(27, 56, 43, 0.7);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background-color: #52b788;
+    color: #1b382b;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #74c69d;
+    transform: translateY(-2px);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* Seções Gerais */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    color: #1b382b;
+    font-size: 32px;
+}
+
+.section-light {
+    background-color: #ffffff;
+}
+
+.section-dark {
+    background-color: #2d5a44;
+    color: white;
+}
+
+.subtitle {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    font-size: 18px;
+}
+
+/* Grid de Pilares */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #1b382b;
+    margin-bottom: 15px;
+}
+
+/* Abas de Impacto (Ações) */
+.btn-group {
+    margin: 30px 0;
+}
+
+.btn-tab {
+    background: transparent;
+    border: 2px solid #74c69d;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.btn-tab.active, .btn-tab:hover {
+    background: #74c69d;
+    color: #1b382b;
+}
+
+.impacto-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+    border-left: 5px solid #74c69d;
+}
+
+/* Formulário de Contato */
+.form-sustentavel {
+    max-width: 600px;
+    margin: 40px auto 0 auto;
+}
+
+.form-sustentavel input, .form-sustentavel textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #d8e2dc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background-color: #fafafa;
+}
+
+.form-sustentavel input:focus, .form-sustentavel textarea:focus {
+    border-color: #52b788;
+}
+
+.form-message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1b382b;
+}
+
+/* Rodapé */
+footer {
+    background-color: #11221a;
+    color: #74c69d;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    .hero-content h2 {
+        font-size: 34px;
+    }
+}
